@@ -1,0 +1,127 @@
+﻿CI/CD : FREESTYLE N PIPELINE STYLE
+
+1. CREATE A JOB IN JENKINS
+
+N AUTOMATE THE BUILD TRIGGER
+
+
+SCM: NONE
+
+BUILD TRIGGER :TIMESTAMPING
+
+BUILD STEP :
+
+POST BUILD ACTIONS
+
+
+Q. CREATE ANOTHER JOB demo2....
+
+add build step   windows batch command
+
+echo "hello"
+add build step   windows batch command
+DATE
+add build step   windows batch command
+VOL C
+VER
+
+add build step   windows batch command
+ipconfig
+add build step   windows batch command
+TIME
+
+
+
+
+Q. make a folder for the project... Open the notepad
+Write a small java code for the printing helloworld. [chat window]
+On that location cmd
+javac Hello.java
+java Hello
+
+Q. JENKINS DASHBORAD
+Make freestyle project  ... then 
+build trigger peridically  *****
+build step: windows batch command to compile your java code
+cd folderpath
+javac Hello.java
+java Hello
+Build code
+Q. Now, make some changes and observe whether it is automated build in the next sequence OR not????????
+
+
+
+
+
+
+
+
+
+
+
+NOW, POST BUILD STEP  :  build another project by chaining multiple projects  : demo1, demo3, demo4
+
+
+
+
+BUILD ANOTHER PROJECT : demo1
+
+=====================================================================
+
+
+how to create a pipeline
+how to integrate git with jenkins.......................
+
+
+Q. GO TO GITHUB
+===============================================================
+Create a new folder   demo4 on local
+Go to the location of the newfolder and open git bash here
+git init
+Copy the same java code inside
+git add .
+git commit -m "mycode" 
+
+---create a new empty repo demo4 on github
+go to git bash now,
+git remote add origin https://github.com/sarutig/demo4.git
+git push origin master
+
+Finally, push the code on the github
+
+
+
+
+
+
+
+
+=================================================================
+q. make a new item in jenkins
+
+> freestyle project
+q. configure::::: SCM :::: GIT 
+> COPY THE URL FROM GIT HUB
+> credential manager
+q. build step : windows ( 3commands)
+======================================
+change it to poll SCM :*****
+Q. NOW, CHANGE YOUR CODE IN THE LOCAL
+git add .
+git commit -m "done"
+git push origin master
+
+Q. NOW, check github for updated code
+
+Q. aLSO, CHECK THE BUILD IN THE JENKINS FOR THE UPDATED STATUS
+in the next build step.
+================================================================
+
+
+
+
+
+
+
+
+
